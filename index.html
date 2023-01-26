@@ -7,168 +7,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobileapp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">Mobileapp</a>
-        <ul>
-          <li><a href=""></a>HOME</li>
-          <li><a href=""></a>FEATURES</li>
-          <li><a href=""></a>TEAM</li>
-          <li><a href=""></a>TESTIMONIALS</li>
-          <li><a href=""></a>CONTACT</li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-inner">
+        <div class="container">
+          <nav class="nav">
+            <a class="logo" href="./index.html">Mobileapp</a>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">HOME</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">FEATURES</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">TEAM</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">TESTIMONIALS</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-      <section>
-        <h1>Introducing Mobileapp</h1>
-        <p>Maecenas vitae tellus sapien. Prasent</p>
-        <ul>
-          <li><p>semper scelerisque tristique a enim</p></li>
-          <li><p>Integer ut mattis nulla, eget vehicula elit</p></li>
-          <li><p>Prasent rutrum ac nunc et</p></li>
-        </ul>
-        <button type="button">Download</button>
-        <img src="./images/hero.png" alt="" />
+      <section class="hero">
+        <div class="container hero-box">
+          <div class="hero-inner">
+            <h1 class="hero-title">Introducing Mobileapp</h1>
+            <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
+            <ul class="hero-list">
+              <li class="hero-list-item">
+                <p class="hero-list-text">
+                  semper scelerisque tristique a enim
+                </p>
+              </li>
+              <li class="hero-list-item">
+                <p class="hero-list-text">
+                  Integer ut mattis nulla, eget vehicula elit
+                </p>
+              </li>
+              <li class="hero-list-item">
+                <p class="hero-list-text">Prasent rutrum ac nunc et</p>
+              </li>
+            </ul>
+            <button class="hero-btn" type="button">Download</button>
+          </div>
+          <img
+            class="hero-img"
+            src="./images/hero.png"
+            alt="app on your phone"
+            width="459"
+          />
+        </div>
       </section>
     </header>
     <main>
-      <section>
-        <h2>KEY FEATURES</h2>
-        <p>
-          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
-          scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a
-          vitae felis. Praesent luctus mi quis nisi interdum eleifend.
-        </p>
-        <ul>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-        </ul>
-        <img src="./images/features.png" alt="features" width="396" />
-        <ul>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-          <li>
-            <h3>Amet varius</h3>
-            <p>
-              Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
-              Vivamus diam a iaculis malesuada
-            </p>
-          </li>
-        </ul>
+      <section class="section features">
+        <div class="container features-container">
+          <h2 class="features-title">KEY FEATURES</h2>
+          <p class="features-text">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
+            a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+          </p>
+          <img
+            class="features-img"
+            src="./images/features.png"
+            alt="features"
+            width="396"
+          />
+          <ul class="features-list">
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p>
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="features-list-title">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>WATCH THE VIDEO</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          fringilla fringilla nisl congue congue. Maecenas nec condimentum
-          libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
-          nisl at, hendrerit risusuis ornare luctus id sollicitudin ante
-          lobortis at.
-        </p>
-        <img src="./images/video.png" alt="video" width="501" />
+      <section class="section video">
+        <div class="container">
+          <div class="video-box">
+            <div class="video-inner">
+              <h2 class="video-title">WATCH THE VIDEO</h2>
+              <p class="video-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse fringilla fringilla nisl congue congue. Maecenas nec
+                condimentum libero, at elementum mauris. Phasellus eget nisi
+                dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id
+                sollicitudin ante lobortis at.
+              </p>
+            </div>
+            <img src="./images/video.png" alt="video" width="501" />
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>OUR TEAM</h2>
-        <p>
-          Nunc vulputate nibh sed congue facilisis. Curabitur posuere
-          scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a
-          vitae felis. Praesent luctus mi quis nisi interdum eleifend.
-        </p>
-        <ul>
-          <li>
-            <img src="./images/team-1.jpg" alt="Jon Doe" width="264" />
-            <h3>Jon Doe</h3>
-            <p>Managing Direcor</p>
-          </li>
-          <li>
-            <img src="./images/team-2.jpg" alt="Jon Doe" width="264" />
-            <h3>Jon Doe</h3>
-            <p>Lead Designer</p>
-          </li>
-          <li>
-            <img src="./images/team-3.jpg" alt="Jon Doe" width="264" />
-            <h3>Jon Doe</h3>
-            <p>Lead Developer</p>
-          </li>
-          <li>
-            <img src="./images/team-4.jpg" alt="Jon Doe" width="264" />
-            <h3>Jon Doe</h3>
-            <p>Sr. UI Designer</p>
-          </li>
-        </ul>
+      <section class="section team">
+        <div class="container">
+          <h2 class="team-title">OUR TEAM</h2>
+          <p class="team-text">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
+            a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+          </p>
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                class="team-item-img"
+                src="./images/team-1.jpg"
+                alt="Jon Doe"
+                width="264"
+              />
+              <div class="team-item-inner">
+                <h3 class="team-item-title">Jon Doe</h3>
+                <p class="team-item-text">Managing Direcor</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-item-img"
+                src="./images/team-2.jpg"
+                alt="Jon Doe"
+                width="264"
+              />
+              <div class="team-item-inner">
+                <h3 class="team-item-title">Jon Doe</h3>
+                <p class="team-item-text">Lead Designer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-item-img"
+                src="./images/team-3.jpg"
+                alt="Jon Doe"
+                width="264"
+              />
+              <div class="team-item-inner">
+                <h3 class="team-item-title">Jon Doe</h3>
+                <p class="team-item-text">Lead Developer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-item-img"
+                src="./images/team-4.jpg"
+                alt="Jon Doe"
+                width="264"
+              />
+              <div class="team-item-inner">
+                <h3 class="team-item-title">Jon Doe</h3>
+                <p class="team-item-text">Sr. UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>WHAT OUR COSTUMER’S SAY</h2>
-        <ul>
-          <li>
-            <img src="./images/slider-1.jpg" alt="slider" width="181" />
-            <h3>Jon Doe</h3>
-            <p>Company Inc.</p>
-            <p>
-              Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
-              venenatis. semper libero nec sapien condimentum dignissim. Nunc
-              ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla
-              facilisi. Nullam tristique eros quis nibh tempus, vel viverra
-              dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet
-              ante a tempus. Aenean gravida massa et ante pulvinar, id
-            </p>
-          </li>
-        </ul>
+      <section class="section slider">
+        <div class="container slider-container">
+          <h2 class="slider-title">WHAT OUR COSTUMER’S SAY</h2>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <img
+                class="slider-item-img"
+                src="./images/slider-1.jpg"
+                alt="slider"
+                width="181"
+              />
+              <h3 class="slider-item-title">Jon Doe</h3>
+              <p class="slider-item-company">Company Inc.</p>
+              <p class="slider-item-text">
+                Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
+                venenatis. semper libero nec sapien condimentum dignissim. Nunc
+                ante ligula, tempor in tellus in, gravida vestibulum justo.
+                Nulla facilisi. Nullam tristique eros quis nibh tempus, vel
+                viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit
+                sit amet ante a tempus. Aenean gravida massa et ante pulvinar,
+                id
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>CONTACT US</h2>
-        <h3>Get in touch with us</h3>
-        <p>
+    <section class="section contact">
+      <div class="container">
+        <h2 class="contact-title">CONTACT US</h2>
+        <h3 class="contact-sub">Get in touch with us</h3>
+        <p class="contact-text">
           Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
           rhoncus lacus fringilla nulla sollicitudin tristique.
         </p>
-        <address>
-          <ul>
-            <li>
-              <a href="tel:+xxxxxxxxxxxx">+xx-xxxx-xxxx-xx</a>
+        <address class="address">
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address-link" href="tel:+xxxxxxxxxxxx"
+                >+xx-xxxx-xxxx-xx</a
+              >
             </li>
-            <li>
-              <a href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
+            <li class="address-item">
+              <a class="address-link" href="mailto:goIteens@gmail.com"
+                >goIteens@gmail.com</a
+              >
             </li>
           </ul>
         </address>
-      </section>
-      <p>&#169; 2019 GoIteens Template. All Rights Reserved</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          &#169; 2019 GoIteens Template. All Rights Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>
