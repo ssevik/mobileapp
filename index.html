@@ -56,27 +56,38 @@
             <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
             <ul class="hero-list">
               <li class="hero-list-item">
+                <svg class="hero-list-svg">
+                  <use href="./images/sprite.svg#icon-hero-icon"></use>
+                </svg>
                 <p class="hero-list-text">
                   semper scelerisque tristique a enim
                 </p>
               </li>
               <li class="hero-list-item">
+                <svg class="hero-list-svg">
+                  <use href="./images/sprite.svg#icon-hero-icon"></use>
+                </svg>
                 <p class="hero-list-text">
                   Integer ut mattis nulla, eget vehicula elit
                 </p>
               </li>
               <li class="hero-list-item">
+                <svg class="hero-list-svg">
+                  <use href="./images/sprite.svg#icon-hero-icon"></use>
+                </svg>
                 <p class="hero-list-text">Prasent rutrum ac nunc et</p>
               </li>
             </ul>
             <button class="hero-btn" type="button">Download</button>
           </div>
-          <img
-            class="hero-img"
-            src="./images/hero.png"
-            alt="app on your phone"
-            width="459"
-          />
+          <div class="hero-img">
+            <img
+              class=""
+              src="./images/hero.png"
+              alt="app on your phone"
+              width="600"
+            />
+          </div>
         </div>
       </section>
     </header>
@@ -98,7 +109,7 @@
           <ul class="features-list">
             <li class="features-list-item">
               <h3 class="features-list-title">Amet varius</h3>
-              <p>
+              <p class="features-list-text">
                 Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                 Vivamus diam a iaculis malesuada
               </p>
@@ -153,6 +164,22 @@
                 dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id
                 sollicitudin ante lobortis at.
               </p>
+              <ul class="video-list">
+                <li class="video-item">
+                  <a class="video-link" href="">
+                    <svg class="video-svg">
+                      <use href="./images/sprite.svg#icon-apple"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="video-item">
+                  <a class="video-link" href="">
+                    <svg class="video-svg">
+                      <use href="./images/sprite.svg#icon-android"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
             <img src="./images/video.png" alt="video" width="501" />
           </div>
@@ -244,31 +271,76 @@
           </ul>
         </div>
       </section>
-    </main>
-    <section class="section contact">
-      <div class="container">
-        <h2 class="contact-title">CONTACT US</h2>
-        <h3 class="contact-sub">Get in touch with us</h3>
-        <p class="contact-text">
-          Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
-          rhoncus lacus fringilla nulla sollicitudin tristique.
-        </p>
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="tel:+xxxxxxxxxxxx"
-                >+xx-xxxx-xxxx-xx</a
-              >
+      <section class="section contact">
+        <div class="container">
+          <h2 class="contact-title">CONTACT US</h2>
+          <h3 class="contact-sub">Get in touch with us</h3>
+          <p class="contact-text">
+            Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
+            rhoncus lacus fringilla nulla sollicitudin tristique.
+          </p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg class="social-svg">
+                  <use
+                    class="icon-normal"
+                    href="./images/sprite.svg#icon-facebook"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/sprite.svg#icon-facebook-hover"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link" href="mailto:goIteens@gmail.com"
-                >goIteens@gmail.com</a
-              >
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg class="social-svg">
+                  <use
+                    class="icon-normal"
+                    href="./images/sprite.svg#icon-twitter"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/sprite.svg#icon-twitter-hover"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg class="social-svg">
+                  <use
+                    class="icon-normal"
+                    href="./images/sprite.svg#icon-linkedin"
+                  ></use>
+                  <use
+                    class="icon-hover"
+                    href="./images/sprite.svg#icon-linkedin-hover"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-    </section>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link" href="tel:+xxxxxxxxxxxx"
+                  >+xx-xxxx-xxxx-xx</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="mailto:goIteens@gmail.com"
+                  >goIteens@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <form class="form">form</form>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <p class="footer-text">
