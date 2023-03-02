@@ -20,6 +20,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -27,22 +31,35 @@
       <div class="header-inner">
         <div class="container">
           <nav class="nav">
-            <a class="logo" href="./index.html">Mobileapp</a>
+            <div class="burger-box">
+              <a class="logo" href="./index.html">Mobileapp</a>
+              <button
+                class="burger-open js-open-menu"
+                type="button"
+                aria-expanded="false"
+                aria-controls="menu-container"
+              >
+                <svg class="burger-svg" aria-label="mobile menu switch">
+                  <use href="./images/sprite.svg#icon-burger-open"></use>
+                </svg>
+              </button>
+            </div>
+
             <ul class="nav-list">
               <li class="nav-list-item">
                 <a class="nav-list-link" href="">HOME</a>
               </li>
               <li class="nav-list-item">
-                <a class="nav-list-link" href="">FEATURES</a>
+                <a class="nav-list-link" href="#features">FEATURES</a>
               </li>
               <li class="nav-list-item">
-                <a class="nav-list-link" href="">TEAM</a>
+                <a class="nav-list-link" href="#team">TEAM</a>
               </li>
               <li class="nav-list-item">
-                <a class="nav-list-link" href="">TESTIMONIALS</a>
+                <a class="nav-list-link" href="#slider">TESTIMONIALS</a>
               </li>
               <li class="nav-list-item">
-                <a class="nav-list-link" href="">CONTACT</a>
+                <a class="nav-list-link" href="#contact">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -78,7 +95,11 @@
                 <p class="hero-list-text">Prasent rutrum ac nunc et</p>
               </li>
             </ul>
-            <button class="hero-btn" type="button">Download</button>
+            <div class="btn-box">
+              <button class="hero-btn button" type="button" data-modal-open>
+                <span class="button-text">Download</span>
+              </button>
+            </div>
           </div>
           <div class="hero-img">
             <img
@@ -92,7 +113,7 @@
       </section>
     </header>
     <main>
-      <section class="section features">
+      <section class="section features" id="features">
         <div class="container features-container">
           <h2 class="features-title">KEY FEATURES</h2>
           <p class="features-text">
@@ -100,6 +121,7 @@
             scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
             a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
           </p>
+
           <img
             class="features-img"
             src="./images/features.png"
@@ -107,28 +129,28 @@
             width="396"
           />
           <ul class="features-list">
-            <li class="features-list-item">
+            <li class="features-list-item column">
               <h3 class="features-list-title">Amet varius</h3>
               <p class="features-list-text">
                 Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                 Vivamus diam a iaculis malesuada
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item column">
               <h3 class="features-list-title">Amet varius</h3>
               <p class="features-list-text">
                 Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                 Vivamus diam a iaculis malesuada
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item column">
               <h3 class="features-list-title">Amet varius</h3>
               <p class="features-list-text">
                 Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                 Vivamus diam a iaculis malesuada
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item column">
               <h3 class="features-list-title">Amet varius</h3>
               <p class="features-list-text">
                 Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
@@ -181,11 +203,16 @@
                 </li>
               </ul>
             </div>
-            <img src="./images/video.png" alt="video" width="501" />
+            <img
+              class="video-img"
+              src="./images/video.png"
+              alt="video"
+              width="501"
+            />
           </div>
         </div>
       </section>
-      <section class="section team">
+      <section class="section team" id="team">
         <div class="container">
           <h2 class="team-title">OUR TEAM</h2>
           <p class="team-text">
@@ -245,99 +272,171 @@
           </ul>
         </div>
       </section>
-      <section class="section slider">
+      <section class="section slider" id="slider">
         <div class="container slider-container">
           <h2 class="slider-title">WHAT OUR COSTUMER’S SAY</h2>
-          <ul class="slider-list">
-            <li class="slider-item">
-              <img
-                class="slider-item-img"
-                src="./images/slider-1.jpg"
-                alt="slider"
-                width="181"
-              />
-              <h3 class="slider-item-title">Jon Doe</h3>
-              <p class="slider-item-company">Company Inc.</p>
-              <p class="slider-item-text">
-                Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
-                venenatis. semper libero nec sapien condimentum dignissim. Nunc
-                ante ligula, tempor in tellus in, gravida vestibulum justo.
-                Nulla facilisi. Nullam tristique eros quis nibh tempus, vel
-                viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit
-                sit amet ante a tempus. Aenean gravida massa et ante pulvinar,
-                id
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section contact">
-        <div class="container">
-          <h2 class="contact-title">CONTACT US</h2>
-          <h3 class="contact-sub">Get in touch with us</h3>
-          <p class="contact-text">
-            Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
-            rhoncus lacus fringilla nulla sollicitudin tristique.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg">
-                  <use
-                    class="icon-normal"
-                    href="./images/sprite.svg#icon-facebook"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/sprite.svg#icon-facebook-hover"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg">
-                  <use
-                    class="icon-normal"
-                    href="./images/sprite.svg#icon-twitter"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/sprite.svg#icon-twitter-hover"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg">
-                  <use
-                    class="icon-normal"
-                    href="./images/sprite.svg#icon-linkedin"
-                  ></use>
-                  <use
-                    class="icon-hover"
-                    href="./images/sprite.svg#icon-linkedin-hover"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <address class="address">
-            <ul class="address-list">
-              <li class="address-item">
-                <a class="address-link" href="tel:+xxxxxxxxxxxx"
-                  >+xx-xxxx-xxxx-xx</a
-                >
+          <div class="swiper mySwiper slider-swiper">
+            <ul class="slider-list swiper-wrapper">
+              <li class="slider-item swiper-slide">
+                <img
+                  class="slider-item-img"
+                  src="./images/slider-1.jpg"
+                  alt="slider"
+                  width="181"
+                />
+                <h3 class="slider-item-title">Jon Doe</h3>
+                <p class="slider-item-company">Company Inc.</p>
+                <p class="slider-item-text">
+                  Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
+                  venenatis. semper libero nec sapien condimentum dignissim.
+                  Nunc ante ligula, tempor in tellus in, gravida vestibulum
+                  justo. Nulla facilisi. Nullam tristique eros quis nibh tempus,
+                  vel viverra dolor pretium. Nam et vehicula leo. Vivamus
+                  hendrerit sit amet ante a tempus. Aenean gravida massa et ante
+                  pulvinar, id
+                </p>
               </li>
-              <li class="address-item">
-                <a class="address-link" href="mailto:goIteens@gmail.com"
-                  >goIteens@gmail.com</a
-                >
+              <li class="slider-item swiper-slide">
+                <img
+                  class="slider-item-img"
+                  src="./images/slider-1.jpg"
+                  alt="slider"
+                  width="181"
+                />
+                <h3 class="slider-item-title">Tomas Donk</h3>
+                <p class="slider-item-company">Company Inc.</p>
+                <p class="slider-item-text">
+                  Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
+                  venenatis. semper libero nec sapien condimentum dignissim.
+                  Nunc ante ligula, tempor in tellus in, gravida vestibulum
+                  justo. Nulla facilisi. Nullam tristique eros quis nibh tempus,
+                  vel viverra dolor pretium. Nam et vehicula leo. Vivamus
+                  hendrerit sit amet ante a tempus. Aenean gravida massa et ante
+                  pulvinar, id
+                </p>
+              </li>
+              <li class="slider-item swiper-slide">
+                <img
+                  class="slider-item-img"
+                  src="./images/slider-1.jpg"
+                  alt="slider"
+                  width="181"
+                />
+                <h3 class="slider-item-title">Marta Cat</h3>
+                <p class="slider-item-company">Company Inc.</p>
+                <p class="slider-item-text">
+                  Vestibulum placerat nisl quis justo venenatis, et lacinia nunc
+                  venenatis. semper libero nec sapien condimentum dignissim.
+                  Nunc ante ligula, tempor in tellus in, gravida vestibulum
+                  justo. Nulla facilisi. Nullam tristique eros quis nibh tempus,
+                  vel viverra dolor pretium. Nam et vehicula leo. Vivamus
+                  hendrerit sit amet ante a tempus. Aenean gravida massa et ante
+                  pulvinar, id
+                </p>
               </li>
             </ul>
-          </address>
-          <form class="form">form</form>
+
+            <div class="my-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="contact-title">CONTACT US</h2>
+          <div class="contact-box">
+            <form class="form">
+              <div class="form-box">
+                <input
+                  class="input form-name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="input form-email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <textarea
+                class="input form-textarea"
+                name="comment"
+                placeholder="Message"
+              ></textarea>
+              <div class="form-btn">
+                <button class="hero-btn button" type="button" data-modal-open>
+                  <span class="button-text">Download</span>
+                </button>
+              </div>
+            </form>
+            <div class="contact-inner">
+              <h3 class="contact-sub">Get in touch with us</h3>
+              <p class="contact-text">
+                Nunc urna est, tristique et varius at, pharetra nec enim.
+                Quisque rhoncus lacus fringilla nulla sollicitudin tristique.
+              </p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use
+                        class="icon-normal"
+                        href="./images/sprite.svg#icon-facebook"
+                      ></use>
+                      <use
+                        class="icon-hover"
+                        href="./images/sprite.svg#icon-facebook-hover"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use
+                        class="icon-normal"
+                        href="./images/sprite.svg#icon-twitter"
+                      ></use>
+                      <use
+                        class="icon-hover"
+                        href="./images/sprite.svg#icon-twitter-hover"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="">
+                    <svg class="social-svg">
+                      <use
+                        class="icon-normal"
+                        href="./images/sprite.svg#icon-linkedin"
+                      ></use>
+                      <use
+                        class="icon-hover"
+                        href="./images/sprite.svg#icon-linkedin-hover"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <address class="address">
+                <ul class="address-list">
+                  <li class="address-item">
+                    <a class="address-link" href="tel:+xxxxxxxxxxxx"
+                      >+xx-xxxx-xxxx-xx</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link" href="mailto:goIteens@gmail.com"
+                      >goIteens@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -348,5 +447,313 @@
         </p>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-svg" width="16px" height="16px" aria-label="">
+            <use href="./images/sprite.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+        <form class="form-download">
+          <b class="form-title">Download</b>
+          <div class="form-inner">
+            <div class="form-checkbox">
+              <input
+                class="checkbox-form"
+                type="radio"
+                name="file"
+                value="file"
+              />
+              <div class="checkbox-box">
+                <svg
+                  class="checkbox-svg"
+                  width="80px"
+                  height="106px"
+                  aria-label=""
+                >
+                  <use href="./images/sprite.svg#icon-download"></use>
+                </svg>
+                <p class="checkbox-title">Download free plan</p>
+                <ul class="checkbox-list">
+                  <li class="checkbox-item">
+                    <svg
+                      class="checkbox-item-svg"
+                      width="14px"
+                      height="14px"
+                      aria-label=""
+                    >
+                      <use href="./images/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <p class="checkbox-item-text">
+                      Donec posuere augue venenatis, aliquet
+                    </p>
+                  </li>
+                  <li class="checkbox-item">
+                    <svg
+                      class="checkbox-item-svg"
+                      width="14px"
+                      height="14px"
+                      aria-label=""
+                    >
+                      <use href="./images/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <p class="checkbox-item-text">
+                      Donec posuere augue venenatis, aliquet
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-checkbox">
+              <input
+                class="checkbox-form"
+                type="radio"
+                name="file"
+                value="file"
+              />
+              <div class="checkbox-box">
+                <svg
+                  class="checkbox-svg"
+                  width="80px"
+                  height="106px"
+                  aria-label=""
+                >
+                  <use href="./images/sprite.svg#icon-download"></use>
+                </svg>
+                <p class="checkbox-title">Download for 20$</p>
+                <ul class="checkbox-list">
+                  <li class="checkbox-item">
+                    <svg
+                      class="checkbox-item-svg"
+                      width="14px"
+                      height="14px"
+                      aria-label=""
+                    >
+                      <use href="./images/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <p class="checkbox-item-text">
+                      Donec posuere augue venenatis, aliquet
+                    </p>
+                  </li>
+                  <li class="checkbox-item">
+                    <svg
+                      class="checkbox-item-svg"
+                      width="14px"
+                      height="14px"
+                      aria-label=""
+                    >
+                      <use href="./images/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <p class="checkbox-item-text">
+                      Donec posuere augue venenatis, aliquet
+                    </p>
+                  </li>
+                  <li class="checkbox-item">
+                    <svg
+                      class="checkbox-item-svg"
+                      width="14px"
+                      height="14px"
+                      aria-label=""
+                    >
+                      <use href="./images/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <p class="checkbox-item-text">
+                      Donec posuere augue venenatis, aliquet
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p class="form-text">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus
+          </p>
+          <ul class="form-description">
+            <li class="form-description-item">
+              <ul class="description-list">
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-name"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">App name</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">Mobileapp.layout</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-licanse"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">License</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">Free</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-author"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">Author</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href=""
+                        >Mobile Marrket App.com</a
+                      >
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-data"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">Data</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">21.02.2022</a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="form-description-item">
+              <ul class="description-list">
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-oc"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">OC</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">Windows</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-language"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">Language</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">English</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-size"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">Size</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">4.16 MB</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="description-item">
+                  <svg
+                    class="description-item-svg"
+                    width="28px"
+                    height="28px"
+                    aria-label=""
+                  >
+                    <use href="./images/sprite.svg#icon-downloads"></use>
+                  </svg>
+                  <div class="description-item-box">
+                    <p class="item-box-title">Downloads</p>
+                    <p class="item-box-text">
+                      <a class="item-box-link" href="">964</a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="button-box">
+            <button class="form-btn button" type="submit">
+              <span class="button-text">Download</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="menu-container">
+      <div class="menu-box">
+        <div class="menu-inner">
+          <a class="logo menu-box-logo" href="./index.html">Mobileapp</a>
+          <button class="menu-btn js-close-menu" type="button">
+            <svg class="modal-svg" width="32" height="32">
+              <use href="./images/sprite.svg#icon-burger-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="menu-box-list">
+          <li class="menu-box-item">
+            <a class="menu-box-link" href="">HOME</a>
+          </li>
+          <li class="menu-box-item">
+            <a class="menu-box-link" href="#features">FEATURES</a>
+          </li>
+          <li class="menu-box-item">
+            <a class="menu-box-link" href="#team">TEAM</a>
+          </li>
+          <li class="menu-box-item">
+            <a class="menu-box-link" href="#slider">TESTIMONIALS</a>
+          </li>
+          <li class="menu-box-item">
+            <a class="menu-box-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
